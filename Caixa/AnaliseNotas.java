@@ -43,7 +43,6 @@ public class AnaliseNotas {
 	if (Rn50 < 1) {
 		System.out.println("Não há notas de B$ 50 suficientes");
 	}
-	continue;
 	}
 	
 	if(valorSaque>=10) {
@@ -53,7 +52,6 @@ public class AnaliseNotas {
 	if (Rn10 < 1) {
 		System.out.println("Não há notas de B$ 10 suficientes");
 	}
-	continue;
 	}
 		
 	if(valorSaque>=5) {
@@ -63,7 +61,6 @@ public class AnaliseNotas {
 	if (Rn5 < 1) {
 		System.out.println("Não há notas de B$ 5 suficientes");
 	}
-	continue;
 	}
 			
 	if(valorSaque>=1) {
