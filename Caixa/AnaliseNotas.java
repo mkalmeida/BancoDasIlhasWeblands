@@ -7,7 +7,7 @@ public class AnaliseNotas {
 
 	Scanner input = new Scanner(System.in);
 		
-	int n50=0, n10=0, n5=0, n1=0, Rn50=100, Rn10=100, Rn5=100, Rn1=100, valorSaque, saques = 0, valor =0, opcao = 0;
+	int n50=0, n10=0, n5=0, n1=0, Rn50=100, Rn10=100, Rn5=100, Rn1=100, valorSaque, saques = 1, valor =0, opcao = 0;
 		
 	do {
 	System.out.println("Digite o valor do saque");
@@ -75,9 +75,23 @@ public class AnaliseNotas {
 		System.exit(0);
 		
 	}
-	}	
-			
-	} while (valor > 0 && saques <= 6);
+	}
+	
+	} while (valor > 0 && saques <= 4);
+	
+	System.out.println("Notas a serem entregues: ");
+	if(n50>0) {
+		System.out.println(n50 + " notas de B$ 50");
+	}
+	if(n10>0) {
+		System.out.println(n10 + " notas de B$ 10");
+	}
+	if(n5>0) {
+		System.out.println(n5 + " notas de B$ 5");
+	}
+	if(n1>0) {
+		System.out.println(n1 + " notas de B$ 1");
+	}
 	
 	System.out.println("Restam " +Rn50+ " notas de B$ 50, " +Rn10+ " notas de B$ 10, " +Rn5+ " notas de R$ 5 e " +Rn1+ " notas de B$ 1.");
 	
